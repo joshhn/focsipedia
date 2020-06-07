@@ -23,6 +23,9 @@ module.exports = {
   organizationName: 'bhoward', // Usually your GitHub org/user name.
   projectName: 'focsipedia', // Usually your repo name.
   themeConfig: {
+    prism: {
+      additionalLanguages: ['java', 'scala'],
+    },
     navbar: {
       title: 'FoCSipedia',
       logo: {
@@ -106,6 +109,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
+          path: 'focs-docs/target/mdoc',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/bhoward/focsipedia/edit/master/',
