@@ -1,6 +1,7 @@
 # Website
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
+It also uses [mdoc](https://scalameta.org/mdoc/) to process Scala code blocks.
 
 ### Installation
 
@@ -9,6 +10,12 @@ $ yarn
 ```
 
 ### Local Development
+
+```
+$ sbt docs/mdoc --watch
+```
+
+This command starts the mdoc processing; it will wait in the background watching for file changes.
 
 ```
 $ yarn start
