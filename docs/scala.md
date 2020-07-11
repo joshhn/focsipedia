@@ -21,3 +21,11 @@ case class Node(left: Tree, value: Int, right: Tree) extends Tree
 
 val t = Node(Node(Leaf, 1, Leaf), 2, Leaf)
 ```
+
+And here's an example using Scastie:
+
+```
+// Not currently working
+scala mdoc:scastie
+for (n <- 1 to 10) yield s"String $n"
+```
